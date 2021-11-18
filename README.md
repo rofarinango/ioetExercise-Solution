@@ -67,7 +67,7 @@ build/reports/tests/test/index.html
 Open index.html on browser.
 
 ### Running
-To run the project an see the output, run the project as follows:
+To run the project and see output, run the project as follows:
 ```
 gradlew run
 ```
