@@ -43,4 +43,31 @@ Using HTTPS:
 ```
 git clone https://github.com/rofarinango/ioetExercise-Solution.git
 ```
-or with SSH:
+
+## Dependencies for Running Locally
+* gradle >= 7.1
+  * All OSes: [click here for installation instructions] (https://gradle.org/install/)
+* Java JDK version 8 or higher
+  * All OSes: [click here for installation instructions] (https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+
+## Compiling and Running
+
+### Compiling
+To compile the project, while in root directory:
+```
+gradlew build
+```
+```
+gradlew test
+```
+To view summmary report of tests go to:
+```
+build/reports/tests/test/index.html
+```
+Open index.html on browser.
+
+### Running
+To run the project an see the output, run the project as follows:
+```
+gradlew run
+```
