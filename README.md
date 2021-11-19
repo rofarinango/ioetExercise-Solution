@@ -125,3 +125,13 @@ Coupling refers on how dependent you are on other classes. What we want to achie
 
 ![figure](https://user-images.githubusercontent.com/47066093/142685542-2e9111d5-5be5-4ffd-b161-8289b3eb2e52.png)
 
+### Open/Closed Principle
+
+Refers to systems being open to extension but closed to modification. We allowed this in our application by implementing an approrpiate interface called Exporter that let us decouple from multiple implementations of exporters. We can implement various kinds of exporters that respect the contract of the Exporter interface, here we implemented a basic HTML exporter class called HtmlExporter.
+
+## Design Pattern
+
+We used a Notification Pattern to deal with the exception handling, this pattern aims to provide a solution for the situation where we are using too many unchecked exceptions. We first created a Notification class that is responsible to collect errors, so that instead of throwing exceptions, we can now simply add messages into the Notification object by implementing a validate method that returns the Notification object.
+
+
+
