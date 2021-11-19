@@ -90,3 +90,16 @@ The user story will allow us to convey the requirements from natural language to
  
  * As a COMPANY, I want to know what EMPLOYEES have been at the office (work) within the same time frame, so that I can show how often they have coincided in the office.
 
+
+With this user stories we can outline an early version of our system on the following UML Class diagram:
+
+![UML Class Diagram - ioetExercise](https://user-images.githubusercontent.com/47066093/142556054-705b3538-6301-46f8-8546-333e10edc75b.png)
+
+With this early version of the system we are applying the Single Responsibility Principle (SRP) which contributes to writing code that is easiser to manage and maintain, SRP refers to a class should only do one thing and do that thing very well. Here we are apply SRP on our classes and our methods. How? The main class at first, had multiple responsabilities including:
+ * Reading input
+ * Parsing the input in a given format
+ * Processing the result
+ * Reporting the result
+After we made the Parser class, the main class had no responsibility on parsing the input, delegating that to the Parser class, however we can do better and we will continue to improve our design on the following deliverables.
+
+
