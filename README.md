@@ -80,7 +80,9 @@ This will be a console application as our client stated that the solution should
 
 Development will be done with Java and we will follow a TDD (Test-Driven Development) methodology to proceed with the deliverables, we will write tests for the requirements in the specification before we proceed with the implementation.
 
-## User Story
+## Sprint 0
+
+### User Story
 
 The user story will allow us to convey the requirements from natural language to a more technical representation after using UML Diagrams. The user stories for the cases that we found in the problem's description are the following:
  
@@ -103,4 +105,23 @@ With this early version of the system we are applying the Single Responsibility 
 
 After we made the Parser class, the main class had no responsibility on parsing the input, delegating that to the Parser class, however we can do better and we will continue to improve our design on the following deliverables.
 
+## Sprint 1
+
+Our first deliverable clearly solved the problem, however this solution was not extensible and it will be hard to mantain in future, specially if the client decides that wants more features. What if the client wants to parse from different types of inputs, such as CSV or JSON in a near future? What if ACME wants to generate a report summarizing all data of employees into different formats, such as html, xml and so on?
+
+We might be over engineering things since this is a simple exercise, nevertheless, this solution let us demostrate that our system is ready for a real life scenario and in the same way we can show our software development skills.
+
+### Final UML Class Diagram
+
+![UML Class Diagram - ioetExercise final](https://user-images.githubusercontent.com/47066093/142685778-4ac897ab-7a64-4c9f-9bbb-14bc544bfedd.png)
+
+### Cohesion
+
+Cohesion measures how strongly related thins are, how related responsibilities of a method or a class are. What we want to achieve for a system is to be highly cohesive, which translates on code easier to understand, locate and use. In our solution, the class EmployeeDataTXTParser is highly cohesive. We also extracted our employee operations into a separate class called EmployeeDataProcessor, as a result this class is more cohesive and therefore can be resused by other parts of our application without depending on the EmployeeDataAnalyzer class.
+
+### Coupling
+
+Coupling refers on how dependent you are on other classes. What we want to achieve in our application is to be loosely coupled, one thing we did to achieve this was to introduce an EmployeeDataParser interface. Figure illustrates the difference of dependecies when  we decouple two classes.
+
+![figure](https://user-images.githubusercontent.com/47066093/142685542-2e9111d5-5be5-4ffd-b161-8289b3eb2e52.png)
 
