@@ -71,3 +71,11 @@ To run the project and see output, run the project as follows:
 ```
 gradlew run
 ```
+
+## Project Description and Overview of the solution
+
+Our client ACME is a big company that would like to have a way to track schedules of their employees, particularly ACME needs a way to verify which employees have been at the office at the same time frame. The goal of this project is to provide a way to perform the tasks require by ACME and enable effective track of employees at ACME.
+
+This will be a console application as our client stated that the solution shouldn't need any UI and this project will be split into a number of sprints that will be derivable to our client in order to get feedback.
+
+Development will be done with Java
