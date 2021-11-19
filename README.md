@@ -76,6 +76,17 @@ gradlew run
 
 Our client ACME is a big company that would like to have a way to track schedules of their employees, particularly ACME needs a way to verify which employees have been at the office at the same time frame. The goal of this project is to provide a way to perform the tasks require by ACME and enable effective track of employees at ACME.
 
-This will be a console application as our client stated that the solution shouldn't need any UI and this project will be split into a number of sprints that will be derivable to our client in order to get feedback.
+This will be a console application as our client stated that the solution shouldn't need any UI and this project will be split into a number of sprints that will be deliverable to our client in order to get feedback.
 
-Development will be done with Java
+Development will be done with Java and we will follow a TDD (Test-Driven Development) methodology to proceed with the deliverables, we will write tests for the requirements in the specification before we proceed with the implementation.
+
+## User Story
+
+The user story will allow us to convey the requirements from natural language to a more technical representation after using UML Diagrams. The user stories for the cases that we found in the problem's description are the following:
+ 
+ * As a COMPANY, I want to register an employee with their schedule, indicating the time and hours, so that I know  the schedule they worked.
+
+ * As a COMPANY, I want to offer employees a schedule with flexibility to work the hours they want.
+ 
+ * As a COMPANY, I want to know what EMPLOYEES have been at the office (work) within the same time frame, so that I can show how often they have coincided in the office.
+
