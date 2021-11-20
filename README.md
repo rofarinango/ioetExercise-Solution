@@ -60,6 +60,8 @@ gradlew build
 ```
 gradlew test
 ```
+
+### Testing
 To view summmary report of tests go to:
 ```
 build/reports/tests/test/index.html
