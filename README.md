@@ -82,6 +82,10 @@ This will be a console application as our client stated that the solution should
 
 Development will be done with Java and we will follow a TDD (Test-Driven Development) methodology to proceed with the deliverables, we will write tests for the requirements in the specification before we proceed with the implementation.
 
+## Architecture
+
+We decided to go with an Object-Oriented Architectural Style which resolves from the Object-Oriented Programming Paradigm. This particular architectural styles focused on data and in conjunction with the system to model we can look at the different types of data handle by the system to see how the system can be broken down into abstract data types, we then use abstraction principle to establish the classes to be represented, like employees, shifts, exporters, parsers each one of these organized with their respective attributes and methods.
+
 ## Sprint 0
 
 ### User Story
