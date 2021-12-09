@@ -55,6 +55,9 @@ git clone https://github.com/rofarinango/ioetExercise-Solution.git
 ### Compiling
 To compile the project, while in root directory:
 ```
+gradle wrapper --gradle-version 7.3.1
+```
+```
 gradlew build
 ```
 ```
